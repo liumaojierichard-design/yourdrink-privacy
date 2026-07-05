@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>你喝隐私政策</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fffaf2;
+        --card: #ffffff;
+        --text: #172023;
+        --muted: #626b73;
+        --line: rgba(23, 32, 35, 0.12);
+        --accent: #0f8f92;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+        line-height: 1.75;
+      }
+
+      main {
+        width: min(100%, 860px);
+        margin: 0 auto;
+        padding: 32px 18px 56px;
+      }
+
+      article {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--card);
+        padding: clamp(22px, 4vw, 44px);
+        box-shadow: 0 14px 36px rgba(72, 58, 40, 0.08);
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(30px, 6vw, 44px);
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin-top: 32px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        font-size: 21px;
+        line-height: 1.35;
+      }
+
+      p {
+        margin-top: 12px;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 1.3em;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .meta {
+        margin-top: 10px;
+        color: var(--muted);
+      }
+
+      .lead {
+        margin-top: 24px;
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        border-radius: 10px;
+        background: rgba(15, 143, 146, 0.08);
+      }
+
+      code {
+        border-radius: 6px;
+        background: rgba(15, 143, 146, 0.08);
+        color: #08777b;
+        padding: 0.12em 0.36em;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.94em;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>你喝隐私政策</h1>
+        <p class="meta">生效日期：2026-07-05</p>
+
+        <p class="lead">
+          本隐私政策适用于 <strong>你喝 / YourDrink</strong> Android 应用当前版本 <code>v0.2.4</code>。
+          你喝是一款饮品记录应用，用于帮助用户记录每日饮水量、饮品分类、咖啡因估算和历史记录。
+        </p>
+
+        <h2>一、适用范围</h2>
+        <p>本隐私政策适用于 <strong>你喝 / YourDrink</strong> Android 应用当前版本 <code>v0.2.4</code>。</p>
+        <p>你喝是一款饮品记录应用，用于帮助用户记录每日饮水量、饮品分类、咖啡因估算和历史记录。</p>
+
+        <h2>二、我们收集的信息</h2>
+        <p>当前版本不会主动收集、上传或共享用户个人信息。</p>
+        <p>应用会在用户设备本地保存以下使用数据：</p>
+        <ul>
+          <li>饮品记录：饮品分类、容量、咖啡因估算、备注、记录时间。</li>
+          <li>饮品配置：用户自定义的快捷饮品名称、分类、容量、咖啡因估算。</li>
+          <li>偏好设置：每日饮水目标、咖啡因估算上限。</li>
+        </ul>
+        <p>这些数据仅保存在当前设备的本地存储中。</p>
+
+        <h2>三、数据如何保存</h2>
+        <p>当前版本使用浏览器本地存储 <code>localStorage</code> 保存数据。</p>
+        <p><code>localStorage</code> 是设备本地的浏览器存储能力，实际用途是让用户关闭应用后仍能保留饮品记录和设置。</p>
+        <p>当前版本：</p>
+        <ul>
+          <li>不需要注册账号。</li>
+          <li>不需要登录。</li>
+          <li>不上传饮品记录到服务器。</li>
+          <li>不进行云同步。</li>
+          <li>不接入第三方统计或广告 SDK。</li>
+        </ul>
+
+        <h2>四、数据如何使用</h2>
+        <p>本地数据仅用于应用内功能展示，包括：</p>
+        <ul>
+          <li>展示今日饮品总量。</li>
+          <li>计算目标完成进度。</li>
+          <li>估算咖啡因摄入和剩余额度。</li>
+          <li>展示记录月历和历史饮品记录。</li>
+          <li>管理用户自定义快捷饮品。</li>
+        </ul>
+
+        <h2>五、数据共享</h2>
+        <p>当前版本不会向第三方共享用户饮品记录、设置或其他本地数据。</p>
+        <p>如果未来版本增加账号、云同步、数据备份、统计分析或第三方服务，我们会在相关功能上线前更新隐私政策，并说明新增的数据处理方式。</p>
+
+        <h2>六、权限说明</h2>
+        <p>当前版本主要通过 Android WebView 加载本地网页应用。</p>
+        <p>如后续版本请求新的系统权限，将在应用功能和隐私政策中说明用途。</p>
+
+        <h2>七、用户如何管理数据</h2>
+        <p>用户可以在应用内清除全部本地记录。</p>
+        <p>用户也可以通过系统设置卸载应用。卸载应用后，本地保存的数据通常会随应用数据一并删除。</p>
+
+        <h2>八、未成年人使用</h2>
+        <p>当前应用不包含社交、广告、支付或内容发布功能。未成年人如使用本应用，建议在监护人指导下使用。</p>
+
+        <h2>九、政策更新</h2>
+        <p>当应用功能发生变化，例如增加账号登录、云同步、服务器存储或第三方服务时，本隐私政策会同步更新。</p>
+
+        <h2>十、联系我们</h2>
+        <p>开发者/主体名称：Flamingcat Liu</p>
+        <p>联系邮箱：<a href="mailto:liumaojie.richard@gmail.com">liumaojie.richard@gmail.com</a></p>
+      </article>
+    </main>
+  </body>
+</html>
