@@ -1,176 +1,85 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>你喝隐私政策</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #fffaf2;
-        --card: #ffffff;
-        --text: #172023;
-        --muted: #626b73;
-        --line: rgba(23, 32, 35, 0.12);
-        --accent: #0f8f92;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="你喝 YourDrink v0.7.1 隐私政策">
+  <title>你喝隐私政策</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color: #17272b; background: #f4faf9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.75; }
+    main { width: min(820px, calc(100% - 32px)); margin: 40px auto; padding: 36px; background: rgba(255,255,255,.94); border: 1px solid #dcebea; border-radius: 24px; box-shadow: 0 18px 50px rgba(31, 104, 105, .09); }
+    h1 { margin: 0 0 4px; font-size: 2rem; }
+    h2 { margin-top: 32px; font-size: 1.2rem; color: #087f7f; }
+    p, li { color: #3e5055; }
+    .meta { color: #6d7d81; }
+    .notice { padding: 16px 18px; background: #ecf9f7; border-left: 4px solid #16a4a1; border-radius: 10px; }
+    a { color: #087f7f; }
+    code { padding: 2px 6px; border-radius: 6px; background: #edf4f4; }
+    footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid #e4eeee; color: #758387; font-size: .92rem; }
+    @media (max-width: 600px) { main { margin: 16px auto; padding: 24px 20px; border-radius: 18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>你喝隐私政策</h1>
+    <p class="meta">YourDrink Privacy Policy · 生效日期：2026年7月11日</p>
 
-      * {
-        box-sizing: border-box;
-      }
+    <div class="notice">本政策适用于你喝 / YourDrink Android 应用 <code>v0.7.1</code>。当前版本不需要账号，用户记录仅保存在设备本地。</div>
 
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-        line-height: 1.75;
-      }
+    <h2>1. 适用范围</h2>
+    <p>你喝是一款日常饮品记录应用，用于帮助用户记录饮品容量、饮水目标、咖啡因摄入估算和历史记录。</p>
 
-      main {
-        width: min(100%, 860px);
-        margin: 0 auto;
-        padding: 32px 18px 56px;
-      }
+    <h2>2. 我们是否收集个人信息</h2>
+    <p>当前版本不会主动收集、上传、出售或共享用户的个人信息。应用不要求注册账号，不提供账号登录，不接入广告 SDK，也不接入第三方统计或分析 SDK。</p>
 
-      article {
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        background: var(--card);
-        padding: clamp(22px, 4vw, 44px);
-        box-shadow: 0 14px 36px rgba(72, 58, 40, 0.08);
-      }
+    <h2>3. 保存在设备本地的数据</h2>
+    <ul>
+      <li>饮品记录：饮品名称、分类、容量、咖啡因估算、备注和记录时间。</li>
+      <li>快捷饮品配置：自定义名称、分类和默认容量等设置。</li>
+      <li>使用偏好：每日饮水目标、咖啡因估算上限、界面语言和等效统计选项。</li>
+      <li>应用状态：数据结构版本和更新说明是否已查看等必要状态。</li>
+    </ul>
 
-      h1,
-      h2,
-      p {
-        margin: 0;
-      }
+    <h2>4. 数据存储方式</h2>
+    <p>当前版本使用 Android WebView 提供的本地存储能力保存数据，使用户关闭应用后仍能保留记录和设置。</p>
+    <ul>
+      <li>不将饮品记录上传到开发者服务器。</li>
+      <li>不提供云同步或多设备同步。</li>
+      <li>不将用户记录发送给广告商或数据分析服务。</li>
+      <li>不出售用户数据。</li>
+    </ul>
 
-      h1 {
-        font-size: clamp(30px, 6vw, 44px);
-        line-height: 1.15;
-        letter-spacing: 0;
-      }
+    <h2>5. 数据用途</h2>
+    <p>本地数据用于显示记录、计算每日总饮用量和目标进度、估算咖啡因摄入、展示历史统计，以及保存快捷饮品和使用偏好。</p>
+    <p>咖啡因数值为估算，仅用于日常记录与参考，不构成医疗建议、疾病诊断或治疗意见。</p>
 
-      h2 {
-        margin-top: 32px;
-        padding-top: 22px;
-        border-top: 1px solid var(--line);
-        font-size: 21px;
-        line-height: 1.35;
-      }
+    <h2>6. 数据共享</h2>
+    <p>当前版本不会向开发者服务器或第三方共享用户的饮品记录、备注、设置或其他本地数据。未来如增加账号、云同步、备份、广告、统计分析或第三方服务，我们会在功能上线前更新本政策。</p>
 
-      p {
-        margin-top: 12px;
-      }
+    <h2>7. 系统权限</h2>
+    <p>当前版本不申请定位、通讯录、相册、摄像头、麦克风、电话、短信等敏感系统权限。应用主要通过 Android WebView 加载随安装包提供的本地页面。</p>
 
-      ul {
-        margin: 12px 0 0;
-        padding-left: 1.3em;
-      }
+    <h2>8. 数据管理与删除</h2>
+    <ul>
+      <li>在应用“我的”页面使用“清除全部记录”。</li>
+      <li>删除或修改单条饮品记录。</li>
+      <li>卸载应用或通过 Android 系统设置清除应用数据。</li>
+    </ul>
+    <p>由于当前版本没有账号系统，开发者服务器不保存可供远程删除的用户账号或饮品记录。</p>
 
-      li + li {
-        margin-top: 6px;
-      }
+    <h2>9. 儿童隐私</h2>
+    <p>本应用不是专门面向儿童设计的产品，也不会主动收集儿童个人信息。</p>
 
-      .meta {
-        margin-top: 10px;
-        color: var(--muted);
-      }
+    <h2>10. 政策更新</h2>
+    <p>当应用功能、数据处理方式或适用规则发生变化时，我们可能更新本政策。更新后的版本会修改生效日期，并通过公开页面提供。</p>
 
-      .lead {
-        margin-top: 24px;
-        padding: 16px 18px;
-        border-left: 4px solid var(--accent);
-        border-radius: 10px;
-        background: rgba(15, 143, 146, 0.08);
-      }
+    <h2>11. 联系方式</h2>
+    <p>联系邮箱：<a href="mailto:liumaojie.richard@gmail.com">liumaojie.richard@gmail.com</a></p>
 
-      code {
-        border-radius: 6px;
-        background: rgba(15, 143, 146, 0.08);
-        color: #08777b;
-        padding: 0.12em 0.36em;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        font-size: 0.94em;
-      }
-
-      a {
-        color: var(--accent);
-        text-underline-offset: 3px;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <article>
-        <h1>你喝隐私政策</h1>
-        <p class="meta">生效日期：2026-07-05</p>
-
-        <p class="lead">
-          本隐私政策适用于 <strong>你喝 / YourDrink</strong> Android 应用当前版本 <code>v0.2.4</code>。
-          你喝是一款饮品记录应用，用于帮助用户记录每日饮水量、饮品分类、咖啡因估算和历史记录。
-        </p>
-
-        <h2>一、适用范围</h2>
-        <p>本隐私政策适用于 <strong>你喝 / YourDrink</strong> Android 应用当前版本 <code>v0.2.4</code>。</p>
-        <p>你喝是一款饮品记录应用，用于帮助用户记录每日饮水量、饮品分类、咖啡因估算和历史记录。</p>
-
-        <h2>二、我们收集的信息</h2>
-        <p>当前版本不会主动收集、上传或共享用户个人信息。</p>
-        <p>应用会在用户设备本地保存以下使用数据：</p>
-        <ul>
-          <li>饮品记录：饮品分类、容量、咖啡因估算、备注、记录时间。</li>
-          <li>饮品配置：用户自定义的快捷饮品名称、分类、容量、咖啡因估算。</li>
-          <li>偏好设置：每日饮水目标、咖啡因估算上限。</li>
-        </ul>
-        <p>这些数据仅保存在当前设备的本地存储中。</p>
-
-        <h2>三、数据如何保存</h2>
-        <p>当前版本使用浏览器本地存储 <code>localStorage</code> 保存数据。</p>
-        <p><code>localStorage</code> 是设备本地的浏览器存储能力，实际用途是让用户关闭应用后仍能保留饮品记录和设置。</p>
-        <p>当前版本：</p>
-        <ul>
-          <li>不需要注册账号。</li>
-          <li>不需要登录。</li>
-          <li>不上传饮品记录到服务器。</li>
-          <li>不进行云同步。</li>
-          <li>不接入第三方统计或广告 SDK。</li>
-        </ul>
-
-        <h2>四、数据如何使用</h2>
-        <p>本地数据仅用于应用内功能展示，包括：</p>
-        <ul>
-          <li>展示今日饮品总量。</li>
-          <li>计算目标完成进度。</li>
-          <li>估算咖啡因摄入和剩余额度。</li>
-          <li>展示记录月历和历史饮品记录。</li>
-          <li>管理用户自定义快捷饮品。</li>
-        </ul>
-
-        <h2>五、数据共享</h2>
-        <p>当前版本不会向第三方共享用户饮品记录、设置或其他本地数据。</p>
-        <p>如果未来版本增加账号、云同步、数据备份、统计分析或第三方服务，我们会在相关功能上线前更新隐私政策，并说明新增的数据处理方式。</p>
-
-        <h2>六、权限说明</h2>
-        <p>当前版本主要通过 Android WebView 加载本地网页应用。</p>
-        <p>如后续版本请求新的系统权限，将在应用功能和隐私政策中说明用途。</p>
-
-        <h2>七、用户如何管理数据</h2>
-        <p>用户可以在应用内清除全部本地记录。</p>
-        <p>用户也可以通过系统设置卸载应用。卸载应用后，本地保存的数据通常会随应用数据一并删除。</p>
-
-        <h2>八、未成年人使用</h2>
-        <p>当前应用不包含社交、广告、支付或内容发布功能。未成年人如使用本应用，建议在监护人指导下使用。</p>
-
-        <h2>九、政策更新</h2>
-        <p>当应用功能发生变化，例如增加账号登录、云同步、服务器存储或第三方服务时，本隐私政策会同步更新。</p>
-
-        <h2>十、联系我们</h2>
-        <p>开发者/主体名称：Flamingcat Liu</p>
-        <p>联系邮箱：<a href="mailto:liumaojie.richard@gmail.com">liumaojie.richard@gmail.com</a></p>
-      </article>
-    </main>
-  </body>
+    <footer>你喝 / YourDrink · v0.7.1</footer>
+  </main>
+</body>
 </html>
+
